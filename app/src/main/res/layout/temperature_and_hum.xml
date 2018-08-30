@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="4dp"
+            card_view:cardUseCompatPadding="true">
+
+            <!-- <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        style="@style/MyCardViewStyle"
+        android:layout_width="329dp"
+        android:layout_height="235dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp">-->
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.budiyev.android.circularprogressbar.CircularProgressBar
+                    android:id="@+id/progress_bar_temperature"
+                    android:layout_width="129dp"
+                    android:layout_height="127dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="44dp"
+                    app:animateProgress="true"
+                    app:backgroundStrokeColor="#9e9e9e"
+                    app:backgroundStrokeWidth="2dp"
+                    app:drawBackgroundStroke="true"
+                    app:foregroundStrokeCap="butt"
+                    app:foregroundStrokeColor="#ffff4081"
+                    app:foregroundStrokeWidth="3dp"
+                    app:indeterminate="true"
+                    app:indeterminateMinimumAngle="45"
+                    app:indeterminateRotationAnimationDuration="1200"
+                    app:indeterminateSweepAnimationDuration="600"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:maximum="100"
+                    app:progress="50"
+                    app:progressAnimationDuration="100"
+                    app:startAngle="270"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/temp_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/nan"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/progress_bar_temperature"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_bar_temperature"
+                    app:layout_constraintStart_toStartOf="@+id/progress_bar_temperature"
+                    app:layout_constraintTop_toTopOf="@+id/progress_bar_temperature"
+                    app:layout_constraintVertical_bias="0.506"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/temperature"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_bar_temperature"
+                    app:layout_constraintStart_toStartOf="@+id/progress_bar_temperature"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar_temperature"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/temperature2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/temperature"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_bar_temperature"
+                    app:layout_constraintStart_toStartOf="@+id/progress_bar_temperature"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar_temperature"
+                    tools:ignore="MissingConstraints" />
+
+                <com.budiyev.android.circularprogressbar.CircularProgressBar
+                    android:id="@+id/progress_bar_humidyty"
+                    android:layout_width="129dp"
+                    android:layout_height="127dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="44dp"
+                    app:animateProgress="true"
+                    app:backgroundStrokeColor="#9e9e9e"
+                    app:backgroundStrokeWidth="2dp"
+                    app:drawBackgroundStroke="true"
+                    app:foregroundStrokeCap="butt"
+                    app:foregroundStrokeColor="#3f51b5"
+                    app:foregroundStrokeWidth="3dp"
+                    app:indeterminate="true"
+                    app:indeterminateMinimumAngle="45"
+                    app:indeterminateRotationAnimationDuration="1200"
+                    app:indeterminateSweepAnimationDuration="600"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:maximum="100"
+                    app:progress="50"
+                    app:progressAnimationDuration="100"
+                    app:startAngle="270"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/hum_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/nan"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/progress_bar_humidyty"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_bar_humidyty"
+                    app:layout_constraintStart_toStartOf="@+id/progress_bar_humidyty"
+                    app:layout_constraintTop_toTopOf="@+id/progress_bar_humidyty" />
+
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/humidity"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_bar_humidyty"
+                    app:layout_constraintStart_toStartOf="@+id/progress_bar_humidyty"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar_humidyty"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/air"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/name_air"
+                    android:textSize="25sp"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <Switch
+                    android:id="@+id/switchHum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/textView4"
+                    card_view:layout_constraintTop_toBottomOf="@+id/switchTemp" />
+
+                <Switch
+                    android:id="@+id/switchTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="24dp"
+                    card_view:layout_constraintStart_toEndOf="@+id/textView3"
+                    card_view:layout_constraintTop_toBottomOf="@+id/temperature2" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/heat"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="18sp"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/temperature2" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="124dp"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/fan"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="18sp"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="208dp"
+                    android:background="@android:color/darker_gray"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:ignore="MissingConstraints" />
+
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

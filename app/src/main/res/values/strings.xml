@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ground_humidity">Ground humidity</string>
+    <string name="electronic_control_system">Electronic control system</string>
+    <string name="light_level">Time light</string>
+    <string name="air_humidity">Air humidity</string>
+    <string name="sync_time">Sync time</string>
+    <string name="connect_to">Connecting to</string>
+    <string name="humidity_ground">Humidity ground</string>
+    <string name="light_name">Light</string>
+    <string name="manual_mode">Manual mode</string>
+    <string name="set_day">Set day</string>
+    <string name="set_night">Set night</string>
+    <string name="heat">Heat</string>
+    <string name="fan">Fan</string>
+    <string name="light_control">Light</string>
+    <string name="watering_on">Watering</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/bluetooth_settings"
+            android:icon="@drawable/bluetooth_settings"
+            android:title="@string/bluetooth_settings" />
+        <item
+            android:id="@+id/nav_sensor"
+            android:icon="@drawable/sensor_icon"
+            android:title="@string/sensors" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/setup" />
+       <!-- <item
+            android:id="@+id/nav_hand_mode"
+            android:icon="@drawable/hand_mode"
+            android:title="@string/hand_mode" />-->
+      <!--  <item
+            android:id="@+id/nav_plots"
+            android:icon="@drawable/plot"
+            android:title="@string/graphics" />-->
+    </group>
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Greenery</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Настройки</string>
+    <string name="sensors">Датчики</string>
+    <string name="tools">Инструменты</string>
+    <string name="hand_mode">Ручной режим</string>
+    <string name="graphics">Графики</string>
+    <string name="name_dialog_bluetooth_list">Bluetooth Device</string>
+    <string name="cancel">Cancel</string>
+    <string name="Find">Find</string>
+    <string name="name_greenery">Input name device</string>
+    <string name="apply">Apply</string>
+    <string name="temperature">Температура</string>
+    <string name="nan">N/A</string>
+    <string name="humidity">Влажность</string>
+    <string name="name_air">Воздух</string>
+    <string name="hello">hello</string>
+    <string name="light">Влажность</string>
+    <string name="lighting">Свет</string>
+    <string name="setup">Установки</string>
+    <string name="bluetooth_settings">Настройки Bluetooth</string>
+    <string name="apply_settings">Принять настройки</string>
+    <string name="ground_humidity">Интенсивность полива</string>
+    <string name="electronic_control_system">Электронная система контроля</string>
+    <string name="light_level">Время начала и конца дня</string>
+    <string name="air_humidity">Влажность воздуха</string>
+    <string name="sync_time">Синхр. времени</string>
+    <string name="humidity_ground">Влажность почвы</string>
+    <string name="light_name">Освещенность</string>
+    <string name="manual_mode">Ручной режим</string>
+    <string name="set_day">Установка начала дня</string>
+    <string name="set_night">Установка начала ночи</string>
+    <string name="heat">Нагреватель</string>
+    <string name="fan">Вентилятор</string>
+    <string name="light_control">Освещение</string>
+    <string name="watering_on">ПОлив</string>
+</resources>
